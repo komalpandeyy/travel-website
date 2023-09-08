@@ -1,0 +1,208 @@
+body{
+    background-color: black;
+
+}
+
+#heading{
+    color:rgb(112, 94, 94);
+    letter-spacing: 0.8;
+    margin-top: 20px;
+    margin-bottom: 30%;
+    text-align: center;
+
+
+}
+
+.main{
+    width:70%;
+    height: 400px;
+    margin-top: 30px;
+    position: absolute;
+    left: 50%;
+    top:50%;
+    transform: translate(-50%,-50%);
+    background-image: url('https://www.lufthansa.com/content/dam/lh/images/local_images/ancillary/lh_anc_hotel_pano_L_en.jpg.transform/lh-dcep-transform-width-1440/img.jpg');
+    background-size: 100% 100%;
+    box-shadow: 1px 2px 10px white;
+    animation: slider 10s infinite linear;
+    
+}
+
+@keyframes slider {
+    0%{
+        background-image: url('https://www.lufthansa.com/content/dam/lh/images/local_images/ancillary/lh_anc_hotel_pano_L_en.jpg.transform/lh-dcep-transform-width-1440/img.jpg');
+    }
+    35%{
+        background-image: url('https://uploads.sarvgyan.com/2014/07/tour-guide-image.jpg');
+    }
+    75%{
+        background-image: url('https://pbs.twimg.com/media/FHwcBcaWUAE98uv.jpg');
+    }
+    
+}
+
+.navigation {
+    background-color: grey;
+    overflow: hidden;
+    text-align: left;
+    
+    
+    
+  }
+  
+  .navigation a {
+    float:left;
+    display: block;
+    color: #f2f2f2;
+    padding: 20px 16px 20px 16px;
+    text-decoration: none;
+    font-size: 23px;
+    
+  }
+  
+  .navigation a:hover {
+    background-color: #0bcccc;
+    color: black;
+  }
+  
+  .navigation a.active {
+    background-color: #10e798;
+    color: white;
+  }
+  
+  /* Hide the link that should open and close the nav.navigation on small screens */
+  .navigation .icon {
+    display: none;
+  }
+
+ 
+ .container{
+    width: 100%;
+    height: 400px;
+    margin: 500px auto;
+    display: flex;
+    margin-bottom: 40px;
+    margin-top: 50px;
+ }
+
+ .col{
+    height: 100%;
+    flex: 1;
+    color: #fff;
+    box-sizing: border-box;
+    padding: 25px;
+    position: relative;
+    transition: 0.6s;
+    
+ }
+
+ .col:nth-child(1){
+    background: #10e798;
+ }
+
+ .col:nth-child(2){
+    background: #d359b9;
+ }
+
+ .col:nth-child(3){
+    background: #4e4d37;
+ }
+
+ h2{
+    font-size: 22px;
+    font-weight: 600;
+    text-align: center;
+ }
+
+ .caption{
+    max-width: 230px;
+    font-size: 12px;
+    margin: 28px 0;
+    
+   
+ }
+
+
+ .col img{
+    width: 60%;
+    position: absolute;
+    right:0;
+    bottom: 0;
+ }
+
+ .col:hover{
+    flex-grow: 2.5;
+    
+ }
+
+ .col:hover caption{
+    display: block;
+ }
+
+ .col:hover h2{
+    text-align: left;
+ }
+
+
+ @media screen and (max-width: 600px) {
+    .navigation a:not(:first-child) {display: none;}
+    .navigation a.icon {
+      float: right;
+      display: block;
+    }
+    .main{
+        width:70%;
+        height: 100px;
+        position: absolute;
+        left: 50%;
+        top:50%;
+        transform: translate(-50%,-50%);
+        background-image: url('https://www.lufthansa.com/content/dam/lh/images/local_images/ancillary/lh_anc_hotel_pano_L_en.jpg.transform/lh-dcep-transform-width-1440/img.jpg');
+        background-size: 100% 100%;
+        box-shadow: 1px 2px 10px white;
+        animation: slider 10s infinite linear;
+    }
+
+  }
+
+
+  .about-us {
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    width: 100%;
+    background-image: url('https://t3.ftcdn.net/jpg/02/85/56/50/360_F_285565016_g2FGSFU0YPw5oq1TUBScOYEU1kW1Zei6.jpg');
+}
+
+
+.about-us h2 {
+    color: white;
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+
+.about-us p {
+    color: white;
+    font-size: 16px;
+    line-height: 1.5;
+}
+
+
+
+  
+  @media screen and (max-width: 600px) {
+    .navigation.responsive {position: relative;}
+    .navigation.responsive a.icon {
+      position: absolute;
+      right: 0;
+      top: 0;
+    }
+    .navigation.responsive a {
+      float: none;
+      display: block;
+      text-align: left;
+    }
+  }
